@@ -5,22 +5,19 @@ public class cuentabancaria {
     String numeroCuenta;
     double saldo;
     
-    // Constructor
     public cuentabancaria(String titular, String numeroCuenta, double saldo) {
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
     }
-    
-    // Método para mostrar los datos de la cuenta
+
     public void mostrarDatos() {
         System.out.println("Titular: " + titular);
         System.out.println("Número de cuenta: " + numeroCuenta);
         System.out.println("Saldo: $" + saldo);
         System.out.println("------------------------");
     }
-    
-    // Método para depositar dinero
+
     public void depositar(double cantidad) {
         if (cantidad > 0) {
             saldo = saldo + cantidad;
@@ -29,8 +26,7 @@ public class cuentabancaria {
             System.out.println("La cantidad debe ser mayor a cero");
         }
     }
-    
-    // Método para retirar dinero
+
     public void retirar(double cantidad) {
         if (cantidad > 0 && cantidad <= saldo) {
             saldo = saldo - cantidad;
@@ -41,8 +37,7 @@ public class cuentabancaria {
             System.out.println("La cantidad debe ser mayor a cero");
         }
     }
-    
-    // Método para transferir dinero a otra cuenta
+
     public void transferir(cuentabancaria otraCuenta, double cantidad) {
         if (cantidad > 0 && cantidad <= saldo) {
             this.saldo = this.saldo - cantidad;
@@ -59,8 +54,6 @@ public class cuentabancaria {
     
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        
-        // Crear tres cuentas bancarias
         cuentabancaria cuenta1 = new cuentabancaria("Juan Perez", "123456", 1500.0);
         cuentabancaria cuenta2 = new cuentabancaria("Maria Lopez", "789012", 2000.0);
         cuentabancaria cuenta3 = new cuentabancaria("Carlos Ruiz", "345678", 800.0);
