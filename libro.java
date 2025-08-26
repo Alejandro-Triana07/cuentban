@@ -16,7 +16,6 @@ public class libro {
         System.out.println("Autor: " + autor);
         System.out.println("Código: " + codigo);
         System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
-        System.out.println("------------------------");
     }
     
     public void marcarPrestado() {

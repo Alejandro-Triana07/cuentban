@@ -5,22 +5,22 @@ public class admin {
         Scanner entrada = new Scanner(System.in);
         biblioteca biblioteca = new biblioteca();
         
-        System.out.println("=== SISTEMA DE GESTIÓN DE BIBLIOTECA ===");
+        System.out.println("SISTEMA DE GESTIÓN DE BIBLIOTECA");
         System.out.println("Libros disponibles:");
-        System.out.println("01 - Cien años de soledad");
-        System.out.println("02 - Don Quijote");
-        System.out.println("03 - El Principito");
-        System.out.println("04 - 1984");
-        System.out.println("05 - Crónica de una muerte anunciada");
+        System.out.println("01 Cien años de soledad");
+        System.out.println("02 Don Quijote");
+        System.out.println("03 El Principito");
+        System.out.println("04 1984");
+        System.out.println("05 Crónica de una muerte anunciada");
         System.out.println("");
         System.out.println("Usuarios disponibles:");
-        System.out.println("1 - Diego Triana");
-        System.out.println("2 - Daniel Galvis");
-        System.out.println("3 - Deixy Garcia");
+        System.out.println("1 Diego Triana");
+        System.out.println("2 Daniel Galvis");
+        System.out.println("3 Deixy Garcia");
         
         int opcion = 0;
         while (opcion != 7) {
-            System.out.println("\n¿Qué deseas hacer?");
+            System.out.println("¿Qué deseas hacer?");
             System.out.println("1. Ver libros disponibles");
             System.out.println("2. Ver usuarios");
             System.out.println("3. Prestar libro");

@@ -29,7 +29,6 @@ public class usuario {
             }
             System.out.println();
         }
-        System.out.println("------------------------");
     }
     
     public void agregarPrestamo(libro libro) {

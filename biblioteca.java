@@ -161,7 +161,7 @@ public class biblioteca {
     }
     
     public void mostrarLibrosDisponibles() {
-        System.out.println("\n=== LIBROS DISPONIBLES ===");
+        System.out.println("LIBROS DISPONIBLES");
         boolean hayDisponibles = false;
         
         for (int i = 0; i < 10; i++) {
@@ -177,7 +177,7 @@ public class biblioteca {
     }
     
     public void mostrarUsuarios() {
-        System.out.println("\n=== USUARIOS REGISTRADOS ===");
+        System.out.println("USUARIOS REGISTRADOS");
         for (int i = 0; i < 5; i++) {
             if (usuarios[i] != null) {
                 usuarios[i].mostrarDatos();
@@ -186,7 +186,7 @@ public class biblioteca {
     }
     
     public void mostrarHistorialPrestamos() {
-        System.out.println("\n=== PRÉSTAMOS ACTIVOS ===");
+        System.out.println(" PRÉSTAMOS ACTIVOS");
         
         if (cantidadPrestamos == 0) {
             System.out.println("No hay préstamos activos");
@@ -202,13 +202,12 @@ public class biblioteca {
                 System.out.println("Usuario: " + usuario.nombre);
                 System.out.println("Fecha de préstamo: " + fechasInicio[i]);
                 System.out.println("Fecha límite: " + fechasLimite[i]);
-                System.out.println("------------------------");
             }
         }
     }
     
     public void mostrarTodosLosLibros() {
-        System.out.println("\n=== TODOS LOS LIBROS ===");
+        System.out.println("TODOS LOS LIBROS");
         for (int i = 0; i < 10; i++) {
             if (libros[i] != null) {
                 libros[i].mostrarDatos();
